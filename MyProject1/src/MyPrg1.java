@@ -9,7 +9,7 @@ public class MyPrg1 {
 		// 메모리 바이트 수가 같거나 더 넓은 범위로는 형변환이 가능하다.
 		long ValueC = ValueA + ValueB;
 		
-		// ++ 반대의 경우는 오류가 난다.
+		// ++ 반대의 경우는 오류가 난다!
 		
 		System.out.println(ValueC);
 	}
