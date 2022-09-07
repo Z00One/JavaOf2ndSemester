@@ -1,9 +1,9 @@
-
 public class MyPrg0 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		// "syso" + Ctrl + Space
+		System.out.println("Hello World");
+		// Ctrl + F11 -> 실행
 	}
 
 }
