@@ -41,13 +41,16 @@ public class Gugudan {
 
 			// 2번 메뉴
 			else if (choice == 2) {
+				System.out.println("The program has ended..");
 				break gugudan;
 			}
 
 			// 예외 처리
 			else {
-				System.out.println("Please enter 1 or 2");
+				System.out.println("Please enter 1 or 2!!");
 			}
 		}
+		// Scanner 사용 종료
+		scn.close();
 	}
 }
