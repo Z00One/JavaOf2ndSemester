@@ -6,7 +6,7 @@ public class Gugudan {
 
 		// 콘솔로부터 입력 받기 위한 Scanner 객체 선언
 		Scanner scn = new Scanner(System.in);
-
+		
 		// 구구단 프로그램
 		gugudan:
 		while (true) {
