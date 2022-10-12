@@ -14,15 +14,13 @@ class InputValues {
 	// 3의 배수 판별 메서드
 	void MuitiplesOf3(int value) {
 		if (value % 3 == 0) {
-		System.out.print("\t\t");
-		System.out.println("This is Muitiples of 3");
+		System.out.println("\t\tThis is Muitiples of 3");
 		}
 	}
 	// 7의 배수 판별 메서드
 	void MuitiplesOf7(int value) {
 		if (value % 7 == 0) {
-		System.out.print("\t\t");
-		System.out.println("This is Muitiples of 7");
+		System.out.println("\t\tThis is Muitiples of 7");
 		}
 	}
 }
@@ -33,7 +31,7 @@ public class Quiz1_1012 {
 		// 입력 받기위한 객체 선언
 		Scanner scn = new Scanner(System.in);
 		
-		// 입력값 판별을 위한 객체 생성
+		// 입력값 판별을 위한 객체 선언
 		InputValues output = new InputValues();
 		
 		int count = 1;
@@ -42,7 +40,7 @@ public class Quiz1_1012 {
 			System.out.print(count + "번째 입력값은 = ");
 			String inputValue = scn.next();
 			
-			// 정수, 문자가 아닌 경우
+			// 정수인 경우
 			try {
 			
 				// String to int
@@ -56,15 +54,16 @@ public class Quiz1_1012 {
 				++count;
 			}
 			
+			// 정수가 아닌 경우
 			catch (Exception e) {
-				while(inputValue.charAt(0) != 'q') {
+				while(inputValue.charAt(0) != 'q') {				// 올바른 종료 명령어가 나올 때까지
 					System.out.print("올바른 종료 명령어를 입력하세요.");
 					inputValue = scn.next();
 				}
+				// 종료
+				System.out.println("Thank you");
 				break;
 			}
 		}
 	}
 }
-		
-		
