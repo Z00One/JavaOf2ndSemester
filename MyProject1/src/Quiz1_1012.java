@@ -2,25 +2,17 @@ import java.util.Scanner;
 
 // 입력한 값들의 정보를 출력해주는 클래스
 class InputValues {
-	int value;													// 멤버 변수
-	
-	InputValues() {												// 생성자
+	InputValues() {														// 생성자
 	}
 	// 짝수 홀수 판별 메서드
 	void EvenOdd(int value) {
 		System.out.print("\t\t");
 		System.out.println(value % 2 == 0 ? "even" : "odd");
 	}
-	// 3의 배수 판별 메서드
-	void MuitiplesOf3(int value) {
-		if (value % 3 == 0) {
-		System.out.println("\t\tThis is Muitiples of 3");
-		}
-	}
-	// 7의 배수 판별 메서드
-	void MuitiplesOf7(int value) {
-		if (value % 7 == 0) {
-		System.out.println("\t\tThis is Muitiples of 7");
+	// 배수 판별 메서드
+	void CheckMuitiple(int value, int divide) {
+		if (value % divide == 0) {
+		System.out.println("\t\tThis is Muitiples of " + divide);
 		}
 	}
 }
@@ -43,13 +35,13 @@ public class Quiz1_1012 {
 			// 정수인 경우
 			try {
 			
-				// String to int
+				// Type Casting String to int
 				int intValue = Integer.parseInt(inputValue);
 				
 				// 멤버 메소드 실행
 				output.EvenOdd(intValue);
-				output.MuitiplesOf3(intValue);
-				output.MuitiplesOf7(intValue);
+				output.CheckMuitiple(intValue, 3);
+				output.CheckMuitiple(intValue, 7);
 				
 				++count;
 			}
